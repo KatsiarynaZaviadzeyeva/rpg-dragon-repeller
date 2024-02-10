@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #354B45;
+    --secondary-color: #F3EADA;
+    --link-color: #FFA17A;
+    --stats-color: #DB2730;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+main {
+    background: url("./assets/pictures/42410.jpg") no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+    font-size: 1.6rem;
+
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:hover,
+a:active {
+    color: var(--link-color);
+}
+
+#text {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+#game {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#controls,
+#stats {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+#monsterStats {
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    color: var(--secondary-color);
+    background: var(--stats-color);
+}
+
+.wrapper {
+    max-width: 1700px;
+}
+
+.game-wrapper {
+    padding-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--primary-color);
+    padding: 14px 0;
+    font-size: 1.4rem;
+}
