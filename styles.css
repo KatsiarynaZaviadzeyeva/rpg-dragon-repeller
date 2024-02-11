@@ -1,8 +1,11 @@
 :root {
     --primary-color: #354B45;
     --secondary-color: #F3EADA;
+    --additional-color: #FFAC33;
+    --background-color: #FEAC32;
+    --button-color: #FECC4C;
     --link-color: #FFA17A;
-    --stats-color: #DB2730;
+    --stats-color: #C70D0D;
 }
 
 * {
@@ -38,6 +41,14 @@ a:active {
     color: var(--link-color);
 }
 
+button {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    background-image: linear-gradient(var(--button-color), var(--additional-color));
+    border: 3px solid var(--background-color);
+}
+
 #text {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -61,6 +72,7 @@ a:active {
 }
 
 #monsterStats {
+    display: none;
     border: 1px solid var(--primary-color);
     padding: 5px;
     color: var(--secondary-color);
@@ -73,6 +85,10 @@ a:active {
 
 .game-wrapper {
     padding-top: 30px;
+}
+
+.stat {
+    padding-right: 10px;
 }
 
 .footer {
